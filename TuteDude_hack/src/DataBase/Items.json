@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Potatoes",
+    "price": "₹25/kg",
+    "vendor": "FreshFarm Supplies",
+    "image": "/images/potatoes.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Chickpeas",
+    "price": "₹60/kg",
+    "vendor": "LegumeMart",
+    "image": "/images/chickpeas.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Suji (Semolina)",
+    "price": "₹40/kg",
+    "vendor": "GrainDepot",
+    "image": "/images/suji.jpg"
+  }
+]
