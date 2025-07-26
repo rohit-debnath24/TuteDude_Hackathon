@@ -1,7 +1,8 @@
 import React from 'react'
 import Items from '../Components/Items'
+import data from '../DataBase/Items.json'
 
-const ItemsPage = () => {
+const ItemsList = () => {
     return (
         <>
             <div className='grid grid-cols-12 gap-8'>
@@ -9,12 +10,12 @@ const ItemsPage = () => {
                 {data.map(item => (
                     <Items
                         key={item.id}
-                        name={item.name}
-                        price={item.price}
-                        vendor={item.vendor}
-                        amount={item.amount}
-                        dTime={item.dTime}
-                        image={item.image}
+                        Name={item.name}
+                        Price={item.price}
+                        Vendor={item.vendor}
+                        Amount={item.amount}
+                        DTime={item.dTime}
+                        Image={item.image}
                     />
                 ))}
 
@@ -25,4 +26,4 @@ const ItemsPage = () => {
     )
 }
 
-export default ItemsPage
+export default ItemsList
