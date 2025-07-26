@@ -7,7 +7,10 @@ import ProfilePage from './WebPages/ProfilePage'
 import ItemsList from './WebPages/ItemsList'
 import ItemsListPage from './WebPages/ItemsListPage'
 import Footer from './WebPages/Footer'
-import AuthPage from './Authentication/AuthPage'
+import CategoryPage from './WebPages/Routes/CategoryPage'
+// import AuthPage from './Authentication/AuthPage'
+
+
 
 
 const App = () => {
@@ -17,12 +20,13 @@ const App = () => {
           <Nabvar/>
    <HomePage/>
    <ItemsListPage/>
+   <CategoryPage/>
    
    
    <ItemsPage/>
    <ProfilePage/>
    <Footer/>
-   <AuthPage/>
+   {/* <AuthPage/> */}
    
 
 
