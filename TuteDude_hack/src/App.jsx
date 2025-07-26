@@ -7,11 +7,13 @@ import ProfilePage from './WebPages/ProfilePage'
 import ItemsList from './WebPages/ItemsList'
 import ItemsListPage from './WebPages/ItemsListPage'
 import Footer from './WebPages/Footer'
+import AuthPage from './Authentication/AuthPage'
+
 
 const App = () => {
   return (
     <>
-    <div className='bg-[linear-gradient(1deg,rgba(218,227,230,1)_0%,rgba(143,216,227,1)_73%,rgba(83,237,237,1)_100%)]'> 
+    <div> 
           <Nabvar/>
    <HomePage/>
    <ItemsListPage/>
@@ -20,6 +22,8 @@ const App = () => {
    <ItemsPage/>
    <ProfilePage/>
    <Footer/>
+   <AuthPage/>
+   
 
 
     </div>

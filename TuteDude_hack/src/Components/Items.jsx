@@ -6,7 +6,7 @@ const Items = (props) => {
     <div className='grid grid-rows-2 h-80 mt-10 hover:scale-105 duration-200'>
 
 
-        <div className='h-40 w-25 bg-transparent rounded-lg overflow-hidden border ' >
+        <div className='h-40 w-25 bg-transparent rounded-lg overflow-hidden ' >
             <img src={props.Image} className='object-cover h-full w-full'></img>
 
         </div>

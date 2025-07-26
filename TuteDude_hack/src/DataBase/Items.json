@@ -79,5 +79,14 @@
     "vendor": "GrainDepot",
     "dTime": "20mins",
     "image": "https://cdn.zeptonow.com/production/tr:w-1280,ar-1200-1200,pr-true,f-auto,q-80/cms/product_variant/d4b8ef20-df5e-4d0b-ab04-36de62dd0f45.jpeg"
+  },
+  {
+    "id": 1,
+    "name": "TOMATOES",
+    "price": "₹25/kg",
+    "amount": "1kg",
+    "vendor": "FreshFarm",
+    "dTime": "10mins",
+    "image": "https://cdn.zeptonow.com/production/tr:w-1280,ar-2000-2000,pr-true,f-auto,q-80/cms/product_variant/5ffa5b57-3a0b-44b0-9192-39e781a11c9f.jpeg"
   }
 ]
