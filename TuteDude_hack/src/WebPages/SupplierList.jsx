@@ -128,7 +128,7 @@ const SupplierList = () => {
         {
           id: "demo2",
           name: "karan mishra",
-          phone: "9000000002",
+          phone: "9489564253",
           address: "Salt Lake, Kolkata",
           lat: 22.5867, // Salt Lake, Kolkata
           lng: 88.4172,
@@ -137,7 +137,7 @@ const SupplierList = () => {
         {
           id: "demo3",
           name: "manish chauhan",
-          phone: "9000000003",
+          phone: "9856894589",
           address: "Park Street, Kolkata",
           lat: 22.5535, // Park Street, Kolkata
           lng: 88.3507,
