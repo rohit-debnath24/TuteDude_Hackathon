@@ -3,10 +3,10 @@ import React from 'react'
 const Items = (props) => {
   return (
     <>
-    <div className='grid grid-rows-2 h-80 mt-10 hover:scale-105 duration-200'>
+    <div className='grid grid-rows-2 h-80  hover:scale-105 duration-200'>
 
 
-        <div className='h-40 w-25 bg-transparent rounded-lg overflow-hidden ' >
+        <div className='h-40 w-auto bg-transparent rounded-lg overflow-hidden ' >
             <img src={props.Image} className='object-cover h-full w-full'></img>
 
         </div>

@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Potatoes",
+    "price": "₹25/kg",
+    "amount": "1kg",
+    "vendor": "FreshFarm",
+    "dTime": "10mins",
+    "image": "https://cdn.zeptonow.com/production/tr:w-1280,ar-1080-1080,pr-true,f-auto,q-80/cms/product_variant/1749cc79-8d34-4c45-b126-6355283cffc5.jpeg"
+  },
+  {
+    "id": 2,
+    "name": "Chickpeas",
+    "price": "₹60/kg",
+    "amount": "1kg",
+    "vendor": "LegumeMart",
+    "dTime": "15mins",
+    "image": "https://cdn.zeptonow.com/production/tr:w-1280,ar-2500-2500,pr-true,f-auto,q-80/cms/product_variant/dae9a5e6-305b-4a3f-a7b5-f89ea4c8465f.jpeg"
+  },
+  {
+    "id": 3,
+    "name": "Suji-sesmoni",
+    "price": "₹40/kg",
+    "amount": "1kg",
+    "vendor": "GrainDepot",
+    "dTime": "20mins",
+    "image": "https://cdn.zeptonow.com/production/tr:w-1280,ar-1200-1200,pr-true,f-auto,q-80/cms/product_variant/d4b8ef20-df5e-4d0b-ab04-36de62dd0f45.jpeg"
+  },
+  {
+    "id": 4,
+    "name": "Chickpeas",
+    "price": "₹60/kg",
+    "amount": "1kg",
+    "vendor": "LegumeMart",
+    "dTime": "15mins",
+    "image": "https://cdn.zeptonow.com/production/tr:w-1280,ar-2500-2500,pr-true,f-auto,q-80/cms/product_variant/dae9a5e6-305b-4a3f-a7b5-f89ea4c8465f.jpeg"
+  },
+  {
+    "id": 5,
+    "name": "Suji-sesmoni",
+    "price": "₹40/kg",
+    "amount": "1kg",
+    "vendor": "GrainDepot",
+    "dTime": "20mins",
+    "image": "https://cdn.zeptonow.com/production/tr:w-1280,ar-1200-1200,pr-true,f-auto,q-80/cms/product_variant/d4b8ef20-df5e-4d0b-ab04-36de62dd0f45.jpeg"
+  },
+  {
+    "id": 6,
+    "name": "Chickpeas",
+    "price": "₹60/kg",
+    "amount": "1kg",
+    "vendor": "LegumeMart",
+    "dTime": "15mins",
+    "image": "https://cdn.zeptonow.com/production/tr:w-1280,ar-2500-2500,pr-true,f-auto,q-80/cms/product_variant/dae9a5e6-305b-4a3f-a7b5-f89ea4c8465f.jpeg"
+  }
+]

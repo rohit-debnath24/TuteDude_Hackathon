@@ -5,7 +5,7 @@ import VegOffer from '../assets/VegOffer.jpg'
 const HomePage = () => {
   return (
     <>
-      <div className=' pt-30'>
+      <div className=' pt-30 pb-20'>
 
         <Categories />
         <div className='grid grid-cols-12'>

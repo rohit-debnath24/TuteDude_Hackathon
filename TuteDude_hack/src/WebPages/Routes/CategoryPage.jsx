@@ -1,5 +1,6 @@
 import React from 'react'
 import ItemsListPage from '../ItemsListPage'
+import SubCatItems from '../../Components/SubCatItems'
 
 const CategoryPage = () => {
     return (
@@ -20,8 +21,13 @@ const CategoryPage = () => {
                 <div className='row-span-3 bg-amber-100 pb-8'>12</div>
 
             </div>
-            <div className='col-span-12 bg-amber-700  gap-4 overflow-y-auto h-[500px]'>
-                
+            <div className='col-span-12 bg-amber-100  gap-4 overflow-y-auto h-[500px]'>
+                <SubCatItems/>
+                <SubCatItems/>
+                <SubCatItems/>
+                <SubCatItems/>
+                <SubCatItems/>
+                <SubCatItems/>
             </div>
             <div className='col-span-1 '></div>
 

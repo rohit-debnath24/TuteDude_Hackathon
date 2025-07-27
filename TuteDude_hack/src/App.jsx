@@ -10,32 +10,44 @@ import Footer from './WebPages/Footer'
 import AuthPage from './Authentication/AuthPage'
 import ProfileSupplier from './WebPages/ProfileSupplier'
 import CategoryPage from './WebPages/Routes/CategoryPage'
-// import AuthPage from './Authentication/AuthPage'
+//import AuthPage from './Authentication/AuthPage'
+
+
+
+
+
+import Cart from './Components/Cart'
+import { useState } from 'react'
 
 
 
 
 const App = () => {
+  const [cartOpen, setCartOpen] = useState(false);
   return (
     <>
     <div> 
-          <Nabvar/>
-   <HomePage/>
-   <ItemsListPage/>
-   <CategoryPage/>
-   
-   
-   <ItemsPage/>
-   <ProfilePage/>
-   <ProfileSupplier/>
-   <Footer/>
-   {/* <AuthPage/> */}
+          
    
 
 
-    </div>
+        <Cart open={cartOpen} onClose={() => setCartOpen(false)} />
+        <Nabvar onCartClick={() => setCartOpen(true)} />
+        <HomePage />
+        <ItemsListPage />
+        <CategoryPage />
 
-    
+        <ItemsPage />
+        <ProfilePage />
+        <ProfileSupplier />
+        <Footer />
+        {/* <AuthPage/> */}
+
+
+
+      </div>
+
+
     </>
 
   )
