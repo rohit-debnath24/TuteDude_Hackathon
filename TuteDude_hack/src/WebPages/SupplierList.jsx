@@ -108,7 +108,54 @@ const SupplierList = () => {
         }
       }
     }
-    setSuppliers(filteredSuppliers);
+    // Ensure at least 3 cards for demo: only use demo suppliers within 20km of user
+    let finalSuppliers = filteredSuppliers;
+    if (finalSuppliers.length < 3) {
+      let userLat = profile && profile.lat;
+      let userLng = profile && profile.lng;
+      userLat = userLat !== undefined && userLat !== null ? parseFloat(userLat) : null;
+      userLng = userLng !== undefined && userLng !== null ? parseFloat(userLng) : null;
+      const demoSuppliers = [
+        {
+          id: "demo1",
+          name: "Demo Supplier 1",
+          phone: "9000000001",
+          address: "Connaught Place, Delhi",
+          lat: 28.6139, // Delhi
+          lng: 77.2090,
+          supply: "Fresh Vegetables & Fruits",
+        },
+        {
+          id: "demo2",
+          name: "Demo Supplier 2",
+          phone: "9000000002",
+          address: "Salt Lake, Kolkata",
+          lat: 22.5867, // Salt Lake, Kolkata
+          lng: 88.4172,
+          supply: "Bulk Rice & Wheat",
+        },
+        {
+          id: "demo3",
+          name: "Demo Supplier 3",
+          phone: "9000000003",
+          address: "Park Street, Kolkata",
+          lat: 22.5535, // Park Street, Kolkata
+          lng: 88.3507,
+          supply: "Dairy & Milk Products",
+        },
+      ];
+      let demoWithin20km = demoSuppliers;
+      if (userLat !== null && userLng !== null && !isNaN(userLat) && !isNaN(userLng)) {
+        demoWithin20km = demoSuppliers.filter(demo => {
+          return getDistanceFromLatLonInKm(userLat, userLng, demo.lat, demo.lng) <= 20;
+        });
+      }
+      // Only add each demo card once, up to 3 total cards
+      for (let i = 0; i < demoWithin20km.length && finalSuppliers.length < 3; i++) {
+        finalSuppliers.push(demoWithin20km[i]);
+      }
+    }
+    setSuppliers(finalSuppliers);
   }, []);
 
   return (
