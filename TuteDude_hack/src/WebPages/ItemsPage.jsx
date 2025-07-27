@@ -43,10 +43,11 @@ const sampleItem = {
   ],
 };
 
+
 const ItemsPage = () => {
   // In a real app, item data would come from props, context, or route params
   return (
-    <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+    <div className="min-h-screen bg-gray-50 flex pt-27 items-center justify-center">
       <ItemDetailView item={sampleItem} />
     </div>
   );

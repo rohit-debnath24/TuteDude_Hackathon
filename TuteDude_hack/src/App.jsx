@@ -17,7 +17,6 @@ import VendorRegister from './Authentication/Login'
 
 
 import Cart from './Components/Cart'
-import { useState } from 'react'
 
 
 
@@ -48,9 +47,14 @@ const App = () => {
 
   const isRegisterRoute = hash === '#/register';
   const isCategoryRoute = hash.startsWith('#/category/');
+  const isItemsRoute = hash.startsWith('#/items/');
   let categoryName = null;
+  let itemName = null;
   if (isCategoryRoute) {
     categoryName = decodeURIComponent(hash.replace('#/category/', ''));
+  }
+  if (isItemsRoute) {
+    itemName = decodeURIComponent(hash.replace('#/items/', ''));
   }
   return (
     <>
@@ -63,6 +67,12 @@ const App = () => {
               <ProfileSupplier />
             </>
           ) : <VendorRegister />
+        ) : isItemsRoute ? (
+          <>
+            <Cart open={cartOpen} onClose={() => setCartOpen(false)} />
+            <Nabvar onCartClick={() => setCartOpen(true)} />
+            <ItemsPage itemName={itemName} />
+          </>
         ) : isCategoryRoute ? (
           <>
             <Cart open={cartOpen} onClose={() => setCartOpen(false)} />
@@ -76,7 +86,6 @@ const App = () => {
             <HomePage />
             <ItemsListPage />
             <CategoryPage />
-            <ItemsPage />
             <ProfilePage />
             <ProfileSupplier />
             <Footer />

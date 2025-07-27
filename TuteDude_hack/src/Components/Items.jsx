@@ -3,7 +3,12 @@ import React from 'react'
 const Items = (props) => {
   return (
     <>
-    <div className='grid grid-rows-2 h-80  hover:scale-105 duration-200'>
+    <div
+      className='grid grid-rows-2 h-80 hover:scale-105 duration-200 cursor-pointer'
+      onClick={() => {
+        window.location.hash = `#/items/${encodeURIComponent(props.Name || '')}`;
+      }}
+    >
 
 
         <div className='h-40 w-auto bg-transparent rounded-lg overflow-hidden ' >
