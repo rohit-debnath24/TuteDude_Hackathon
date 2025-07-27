@@ -86,12 +86,13 @@ const SupplierList = () => {
     let userLat = profile && profile.lat;
     let userLng = profile && profile.lng;
     let allSuppliers = getAllSuppliers();
+    let filteredSuppliers = allSuppliers;
     // Parse as float if present
     if (userLat !== undefined && userLng !== undefined && userLat !== null && userLng !== null) {
       userLat = parseFloat(userLat);
       userLng = parseFloat(userLng);
       if (!isNaN(userLat) && !isNaN(userLng)) {
-        allSuppliers = allSuppliers.filter(sup => {
+        filteredSuppliers = allSuppliers.filter(sup => {
           if (sup.lat !== undefined && sup.lng !== undefined && sup.lat !== null && sup.lng !== null) {
             const supLat = parseFloat(sup.lat);
             const supLng = parseFloat(sup.lng);
@@ -101,9 +102,13 @@ const SupplierList = () => {
           }
           return false;
         });
+        // If no suppliers found within 20km, show all
+        if (filteredSuppliers.length === 0) {
+          filteredSuppliers = allSuppliers;
+        }
       }
     }
-    setSuppliers(allSuppliers);
+    setSuppliers(filteredSuppliers);
   }, []);
 
   return (
