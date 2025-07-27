@@ -25,9 +25,21 @@ const Nabvar = ({ onCartClick }) => {
                         onFocus={() => { window.location.hash = '#/itemslist'; }}
                     />
                 </div>
-                <div className='col-span-2 grid justify-center items-center grid-cols-3'>
+                <div className='col-span-2 grid justify-center items-center grid-cols-4'>
                     <div className='col-span-1'><img src={discount} className='h-10' /></div>
-                    <div className='col-span-1'><img src={user} className='h-10 cursor-pointer' onClick={() => { window.location.hash = '#/register'; }} /></div>
+                    <div className='col-span-1'><img src={user} className='h-10 cursor-pointer' onClick={() => {
+                      const isRegistered = localStorage.getItem('isSupplierRegistered') === 'true';
+                      window.location.hash = isRegistered ? '#/profile' : '#/register';
+                    }} /></div>
+                    <div className='col-span-1'>
+                        <button
+                          className='h-10 w-10 flex items-center justify-center rounded-full bg-purple-100 hover:bg-purple-200 transition border border-purple-200 text-purple-700 font-bold text-lg shadow-sm'
+                          title='Suppliers List'
+                          onClick={() => { window.location.hash = '#/suppliers'; }}
+                        >
+                          S
+                        </button>
+                    </div>
                     <div className='col-span-1'><img src={cart} className='h-10 cursor-pointer' onClick={onCartClick} /></div>
                 </div>
             </div>

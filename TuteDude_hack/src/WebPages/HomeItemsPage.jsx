@@ -10,8 +10,7 @@ const HomeItemsPage = () => {
 
 
     <HomeItemsList/>
-    <HomeItemsList/>
-    <HomeItemsList/>
+   
     </div>
     
     </>

@@ -1,3 +1,5 @@
+import SupplierList from './WebPages/SupplierList';
+// ...existing code...
 import React, { useState } from 'react'
 import Nabvar from './Components/Nabvar'
 import { SearchProvider } from './Utilities/SearchContext';
@@ -9,9 +11,9 @@ import ItemsList from './WebPages/ItemsList'
 import ItemsListPage from './WebPages/ItemsListPage'
 import Footer from './WebPages/Footer'
 import AuthPage from './Authentication/AuthPage'
-import ProfileSupplier from './WebPages/ProfileSupplier'
+// import ProfileSupplier from './WebPages/ProfileSupplier'
 import CategoryPage from './WebPages/Routes/CategoryPage'
-import VendorRegister from './Authentication/Login'
+import Register from './Authentication/Register'
 
 
 
@@ -52,7 +54,7 @@ const App = () => {
   const isItemsRoute = hash.startsWith('#/items/');
   const isItemsListRoute = hash === '#/itemslist';
   const isProfileRoute = hash === '#/profile';
-  const isSupplierProfileRoute = hash === '#/supplier-profile';
+  const isSuppliersRoute = hash === '#/suppliers';
   let categoryName = null;
   let itemName = null;
   if (isCategoryRoute) {
@@ -66,13 +68,13 @@ const App = () => {
     <SearchProvider>
       <div>
         {isRegisterRoute ? (
-          isRegistered ? (
-            <>
-              <Cart open={cartOpen} onClose={() => setCartOpen(false)} />
-              <Nabvar onCartClick={() => setCartOpen(true)} />
-              <ProfileSupplier />
-            </>
-          ) : <VendorRegister />
+          <Register />
+        ) : isSuppliersRoute ? (
+          <>
+            <Cart open={cartOpen} onClose={() => setCartOpen(false)} />
+            <Nabvar onCartClick={() => setCartOpen(true)} />
+            <SupplierList />
+          </>
         ) : isItemsRoute ? (
           <>
             <Cart open={cartOpen} onClose={() => setCartOpen(false)} />
@@ -96,12 +98,6 @@ const App = () => {
             <Cart open={cartOpen} onClose={() => setCartOpen(false)} />
             <Nabvar onCartClick={() => setCartOpen(true)} />
             <ProfilePage />
-          </>
-        ) : isSupplierProfileRoute ? (
-          <>
-            <Cart open={cartOpen} onClose={() => setCartOpen(false)} />
-            <Nabvar onCartClick={() => setCartOpen(true)} />
-            <ProfileSupplier />
           </>
         ) : (
           <>
