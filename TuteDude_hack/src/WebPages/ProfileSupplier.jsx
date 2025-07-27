@@ -155,9 +155,9 @@ const ProfileSupplier = () => {
               </div>
             ) : (
               <>
-                <h1 className="text-2xl font-bold mb-8">Supplier Dashboard</h1>
+                <h1 className="text-2xl font-bold mb-8">Vendor Dashboard</h1>
                 <div className="bg-white border rounded-lg p-8 flex flex-col items-center justify-center">
-                  <h2 className="text-xl font-semibold mb-2">Welcome to Your Supplier Profile</h2>
+                  <h2 className="text-xl font-semibold mb-2">Welcome to Your Profile</h2>
                   <p className="text-gray-600 text-center mb-4">Manage your items on the market, addresses, and account details using the menu on the left. Access support and resources to help your business grow.</p>
                 </div>
                 {/* Profile Edit Section */}

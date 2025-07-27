@@ -4,11 +4,12 @@ import ItemsList from './ItemsList'
 const ItemsListPage = () => {
   return (
     <>
-    
+    <div className='pt-25'>
+
+
+
     <ItemsList/>
-    <ItemsList/>
-    <ItemsList/>
-    <ItemsList/>
+    </div>
     
     </>
   )

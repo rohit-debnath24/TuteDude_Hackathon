@@ -28,65 +28,335 @@
   },
   {
     "id": 4,
-    "name": "Chickpeas",
-    "price": "₹60/kg",
+    "name": "Tomatoes",
+    "price": "₹30/kg",
     "amount": "1kg",
-    "vendor": "LegumeMart",
-    "dTime": "15mins",
-    "image": "https://cdn.zeptonow.com/production/tr:w-1280,ar-2500-2500,pr-true,f-auto,q-80/cms/product_variant/dae9a5e6-305b-4a3f-a7b5-f89ea4c8465f.jpeg"
+    "vendor": "FreshFarm",
+    "dTime": "12mins",
+    "image": "https://cdn.zeptonow.com/production/tr:w-1280,ar-2000-2000,pr-true,f-auto,q-80/cms/product_variant/5ffa5b57-3a0b-44b0-9192-39e781a11c9f.jpeg"
   },
   {
     "id": 5,
-    "name": "Suji-sesmoni",
-    "price": "₹40/kg",
+    "name": "Onions",
+    "price": "₹20/kg",
     "amount": "1kg",
-    "vendor": "GrainDepot",
-    "dTime": "20mins",
-    "image": "https://cdn.zeptonow.com/production/tr:w-1280,ar-1200-1200,pr-true,f-auto,q-80/cms/product_variant/d4b8ef20-df5e-4d0b-ab04-36de62dd0f45.jpeg"
+    "vendor": "VeggieMart",
+    "dTime": "8mins",
+    "image": "https://cdn.zeptonow.com/production/tr:w-1280,ar-2000-2000,pr-true,f-auto,q-80/cms/product_variant/7e2e2b2d-2e2e-4e2e-8e2e-2e2e2e2e2e2e.jpeg"
   },
   {
     "id": 6,
-    "name": "Chickpeas",
-    "price": "₹60/kg",
+    "name": "Carrots",
+    "price": "₹35/kg",
     "amount": "1kg",
-    "vendor": "LegumeMart",
-    "dTime": "15mins",
-    "image": "https://cdn.zeptonow.com/production/tr:w-1280,ar-2500-2500,pr-true,f-auto,q-80/cms/product_variant/dae9a5e6-305b-4a3f-a7b5-f89ea4c8465f.jpeg"
+    "vendor": "VeggieMart",
+    "dTime": "9mins",
+    "image": "https://cdn.zeptonow.com/production/tr:w-1280,ar-2000-2000,pr-true,f-auto,q-80/cms/product_variant/8e2e2b2d-2e2e-4e2e-8e2e-2e2e2e2e2e2e.jpeg"
   },
   {
     "id": 7,
-    "name": "Suji-sesmoni",
-    "price": "₹40/kg",
-    "amount": "1kg",
-    "vendor": "GrainDepot",
-    "dTime": "20mins",
-    "image": "https://cdn.zeptonow.com/production/tr:w-1280,ar-1200-1200,pr-true,f-auto,q-80/cms/product_variant/d4b8ef20-df5e-4d0b-ab04-36de62dd0f45.jpeg"
+    "name": "Broccoli",
+    "price": "₹60/kg",
+    "amount": "500g",
+    "vendor": "GreenLeaf",
+    "dTime": "14mins",
+    "image": "https://cdn.zeptonow.com/production/tr:w-1280,ar-2000-2000,pr-true,f-auto,q-80/cms/product_variant/9e2e2b2d-2e2e-4e2e-8e2e-2e2e2e2e2e2e.jpeg"
   },
   {
     "id": 8,
-    "name": "Chickpeas",
-    "price": "₹60/kg",
-    "amount": "1kg",
-    "vendor": "LegumeMart",
-    "dTime": "15mins",
-    "image": "https://cdn.zeptonow.com/production/tr:w-1280,ar-2500-2500,pr-true,f-auto,q-80/cms/product_variant/dae9a5e6-305b-4a3f-a7b5-f89ea4c8465f.jpeg"
+    "name": "Spinach",
+    "price": "₹20/bunch",
+    "amount": "1 bunch",
+    "vendor": "GreenLeaf",
+    "dTime": "7mins",
+    "image": "https://cdn.zeptonow.com/production/tr:w-1280,ar-2000-2000,pr-true,f-auto,q-80/cms/product_variant/ae2e2b2d-2e2e-4e2e-8e2e-2e2e2e2e2e2e.jpeg"
   },
   {
     "id": 9,
-    "name": "Suji-sesmoni",
-    "price": "₹40/kg",
+    "name": "Cucumber",
+    "price": "₹22/kg",
     "amount": "1kg",
-    "vendor": "GrainDepot",
-    "dTime": "20mins",
-    "image": "https://cdn.zeptonow.com/production/tr:w-1280,ar-1200-1200,pr-true,f-auto,q-80/cms/product_variant/d4b8ef20-df5e-4d0b-ab04-36de62dd0f45.jpeg"
+    "vendor": "VeggieMart",
+    "dTime": "11mins",
+    "image": "https://cdn.zeptonow.com/production/tr:w-1280,ar-2000-2000,pr-true,f-auto,q-80/cms/product_variant/be2e2b2d-2e2e-4e2e-8e2e-2e2e2e2e2e2e.jpeg"
   },
   {
-    "id": 1,
-    "name": "TOMATOES",
+    "id": 10,
+    "name": "Mango Alphonso",
+    "price": "₹250/kg",
+    "amount": "1kg",
+    "vendor": "Orchard",
+    "dTime": "18mins",
+    "image": "https://cdn.zeptonow.com/production/tr:w-1280,ar-2000-2000,pr-true,f-auto,q-80/cms/product_variant/ce2e2b2d-2e2e-4e2e-8e2e-2e2e2e2e2e2e.jpeg"
+  },
+  {
+    "id": 11,
+    "name": "Apple Fuji",
+    "price": "₹120/kg",
+    "amount": "1kg",
+    "vendor": "Orchard",
+    "dTime": "13mins",
+    "image": "https://cdn.zeptonow.com/production/tr:w-1280,ar-2000-2000,pr-true,f-auto,q-80/cms/product_variant/de2e2b2d-2e2e-4e2e-8e2e-2e2e2e2e2e2e.jpeg"
+  },
+  {
+    "id": 12,
+    "name": "Banana Robusta",
+    "price": "₹28/4pcs",
+    "amount": "4pcs",
+    "vendor": "FruitMart",
+    "dTime": "6mins",
+    "image": "https://cdn.zeptonow.com/production/tr:w-1280,ar-2000-2000,pr-true,f-auto,q-80/cms/product_variant/ee2e2b2d-2e2e-4e2e-8e2e-2e2e2e2e2e2e.jpeg"
+  },
+  {
+    "id": 13,
+    "name": "Grapes Green",
+    "price": "₹90/kg",
+    "amount": "1kg",
+    "vendor": "FruitMart",
+    "dTime": "10mins",
+    "image": "https://cdn.zeptonow.com/production/tr:w-1280,ar-2000-2000,pr-true,f-auto,q-80/cms/product_variant/fe2e2b2d-2e2e-4e2e-8e2e-2e2e2e2e2e2e.jpeg"
+  },
+  {
+    "id": 14,
+    "name": "Orange Nagpur",
+    "price": "₹60/kg",
+    "amount": "1kg",
+    "vendor": "FruitMart",
+    "dTime": "8mins",
+    "image": "https://cdn.zeptonow.com/production/tr:w-1280,ar-2000-2000,pr-true,f-auto,q-80/cms/product_variant/0e2e2b2d-2e2e-4e2e-8e2e-2e2e2e2e2e2e.jpeg"
+  },
+  {
+    "id": 15,
+    "name": "Pineapple",
+    "price": "₹50/pc",
+    "amount": "1pc",
+    "vendor": "FruitMart",
+    "dTime": "15mins",
+    "image": "https://cdn.zeptonow.com/production/tr:w-1280,ar-2000-2000,pr-true,f-auto,q-80/cms/product_variant/1e2e2b2d-2e2e-4e2e-8e2e-2e2e2e2e2e2e.jpeg"
+  },
+  {
+    "id": 16,
+    "name": "Papaya",
+    "price": "₹35/kg",
+    "amount": "1kg",
+    "vendor": "FruitMart",
+    "dTime": "9mins",
+    "image": "https://cdn.zeptonow.com/production/tr:w-1280,ar-2000-2000,pr-true,f-auto,q-80/cms/product_variant/2e2e2b2d-2e2e-4e2e-8e2e-2e2e2e2e2e2e.jpeg"
+  },
+  {
+    "id": 17,
+    "name": "Watermelon",
+    "price": "₹20/kg",
+    "amount": "1kg",
+    "vendor": "FruitMart",
+    "dTime": "7mins",
+    "image": "https://cdn.zeptonow.com/production/tr:w-1280,ar-2000-2000,pr-true,f-auto,q-80/cms/product_variant/3e2e2b2d-2e2e-4e2e-8e2e-2e2e2e2e2e2e.jpeg"
+  },
+  {
+    "id": 18,
+    "name": "Strawberry",
+    "price": "₹150/box",
+    "amount": "1 box",
+    "vendor": "FruitMart",
+    "dTime": "12mins",
+    "image": "https://cdn.zeptonow.com/production/tr:w-1280,ar-2000-2000,pr-true,f-auto,q-80/cms/product_variant/4e2e2b2d-2e2e-4e2e-8e2e-2e2e2e2e2e2e.jpeg"
+  },
+  {
+    "id": 19,
+    "name": "Kiwi",
+    "price": "₹30/pc",
+    "amount": "1pc",
+    "vendor": "FruitMart",
+    "dTime": "11mins",
+    "image": "https://cdn.zeptonow.com/production/tr:w-1280,ar-2000-2000,pr-true,f-auto,q-80/cms/product_variant/5e2e2b2d-2e2e-4e2e-8e2e-2e2e2e2e2e2e.jpeg"
+  },
+  {
+    "id": 20,
+    "name": "Avocado",
+    "price": "₹120/pc",
+    "amount": "1pc",
+    "vendor": "FruitMart",
+    "dTime": "14mins",
+    "image": "https://cdn.zeptonow.com/production/tr:w-1280,ar-2000-2000,pr-true,f-auto,q-80/cms/product_variant/6e2e2b2d-2e2e-4e2e-8e2e-2e2e2e2e2e2e.jpeg"
+  },
+  {
+    "id": 21,
+    "name": "Sweet Corn",
+    "price": "₹35/2pcs",
+    "amount": "2pcs",
+    "vendor": "VeggieMart",
+    "dTime": "10mins",
+    "image": "https://cdn.zeptonow.com/production/tr:w-1280,ar-2000-2000,pr-true,f-auto,q-80/cms/product_variant/7e2e2b2d-2e2e-4e2e-8e2e-2e2e2e2e2e2e.jpeg"
+  },
+  {
+    "id": 22,
+    "name": "Peas",
+    "price": "₹50/kg",
+    "amount": "1kg",
+    "vendor": "VeggieMart",
+    "dTime": "13mins",
+    "image": "https://cdn.zeptonow.com/production/tr:w-1280,ar-2000-2000,pr-true,f-auto,q-80/cms/product_variant/8e2e2b2d-2e2e-4e2e-8e2e-2e2e2e2e2e2e.jpeg"
+  },
+  {
+    "id": 23,
+    "name": "Cauliflower",
+    "price": "₹30/pc",
+    "amount": "1pc",
+    "vendor": "VeggieMart",
+    "dTime": "8mins",
+    "image": "https://cdn.zeptonow.com/production/tr:w-1280,ar-2000-2000,pr-true,f-auto,q-80/cms/product_variant/9e2e2b2d-2e2e-4e2e-8e2e-2e2e2e2e2e2e.jpeg"
+  },
+  {
+    "id": 24,
+    "name": "Brinjal",
     "price": "₹25/kg",
     "amount": "1kg",
-    "vendor": "FreshFarm",
+    "vendor": "VeggieMart",
+    "dTime": "9mins",
+    "image": "https://cdn.zeptonow.com/production/tr:w-1280,ar-2000-2000,pr-true,f-auto,q-80/cms/product_variant/ae2e2b2d-2e2e-4e2e-8e2e-2e2e2e2e2e2e.jpeg"
+  },
+  {
+    "id": 25,
+    "name": "Pumpkin",
+    "price": "₹18/kg",
+    "amount": "1kg",
+    "vendor": "VeggieMart",
+    "dTime": "12mins",
+    "image": "https://cdn.zeptonow.com/production/tr:w-1280,ar-2000-2000,pr-true,f-auto,q-80/cms/product_variant/be2e2b2d-2e2e-4e2e-8e2e-2e2e2e2e2e2e.jpeg"
+  },
+  {
+    "id": 26,
+    "name": "Lady Finger",
+    "price": "₹28/kg",
+    "amount": "1kg",
+    "vendor": "VeggieMart",
     "dTime": "10mins",
-    "image": "https://cdn.zeptonow.com/production/tr:w-1280,ar-2000-2000,pr-true,f-auto,q-80/cms/product_variant/5ffa5b57-3a0b-44b0-9192-39e781a11c9f.jpeg"
+    "image": "https://cdn.zeptonow.com/production/tr:w-1280,ar-2000-2000,pr-true,f-auto,q-80/cms/product_variant/ce2e2b2d-2e2e-4e2e-8e2e-2e2e2e2e2e2e.jpeg"
+  },
+  {
+    "id": 27,
+    "name": "Bottle Gourd",
+    "price": "₹22/kg",
+    "amount": "1kg",
+    "vendor": "VeggieMart",
+    "dTime": "11mins",
+    "image": "https://cdn.zeptonow.com/production/tr:w-1280,ar-2000-2000,pr-true,f-auto,q-80/cms/product_variant/de2e2b2d-2e2e-4e2e-8e2e-2e2e2e2e2e2e.jpeg"
+  },
+  {
+    "id": 28,
+    "name": "Bitter Gourd",
+    "price": "₹30/kg",
+    "amount": "1kg",
+    "vendor": "VeggieMart",
+    "dTime": "13mins",
+    "image": "https://cdn.zeptonow.com/production/tr:w-1280,ar-2000-2000,pr-true,f-auto,q-80/cms/product_variant/ee2e2b2d-2e2e-4e2e-8e2e-2e2e2e2e2e2e.jpeg"
+  },
+  {
+    "id": 29,
+    "name": "Cabbage",
+    "price": "₹24/kg",
+    "amount": "1kg",
+    "vendor": "VeggieMart",
+    "dTime": "8mins",
+    "image": "https://cdn.zeptonow.com/production/tr:w-1280,ar-2000-2000,pr-true,f-auto,q-80/cms/product_variant/fe2e2b2d-2e2e-4e2e-8e2e-2e2e2e2e2e2e.jpeg"
+  },
+  {
+    "id": 30,
+    "name": "Radish",
+    "price": "₹18/kg",
+    "amount": "1kg",
+    "vendor": "VeggieMart",
+    "dTime": "7mins",
+    "image": "https://cdn.zeptonow.com/production/tr:w-1280,ar-2000-2000,pr-true,f-auto,q-80/cms/product_variant/0f2e2b2d-2e2e-4e2e-8e2e-2e2e2e2e2e2e.jpeg"
+  },
+  {
+    "id": 31,
+    "name": "Beetroot",
+    "price": "₹32/kg",
+    "amount": "1kg",
+    "vendor": "VeggieMart",
+    "dTime": "9mins",
+    "image": "https://cdn.zeptonow.com/production/tr:w-1280,ar-2000-2000,pr-true,f-auto,q-80/cms/product_variant/1f2e2b2d-2e2e-4e2e-8e2e-2e2e2e2e2e2e.jpeg"
+  },
+  {
+    "id": 32,
+    "name": "Green Beans",
+    "price": "₹40/kg",
+    "amount": "1kg",
+    "vendor": "VeggieMart",
+    "dTime": "10mins",
+    "image": "https://cdn.zeptonow.com/production/tr:w-1280,ar-2000-2000,pr-true,f-auto,q-80/cms/product_variant/2f2e2b2d-2e2e-4e2e-8e2e-2e2e2e2e2e2e.jpeg"
+  },
+  {
+    "id": 33,
+    "name": "Capsicum",
+    "price": "₹38/kg",
+    "amount": "1kg",
+    "vendor": "VeggieMart",
+    "dTime": "11mins",
+    "image": "https://cdn.zeptonow.com/production/tr:w-1280,ar-2000-2000,pr-true,f-auto,q-80/cms/product_variant/3f2e2b2d-2e2e-4e2e-8e2e-2e2e2e2e2e2e.jpeg"
+  },
+  {
+    "id": 34,
+    "name": "Green Peas",
+    "price": "₹55/kg",
+    "amount": "1kg",
+    "vendor": "VeggieMart",
+    "dTime": "12mins",
+    "image": "https://cdn.zeptonow.com/production/tr:w-1280,ar-2000-2000,pr-true,f-auto,q-80/cms/product_variant/4f2e2b2d-2e2e-4e2e-8e2e-2e2e2e2e2e2e.jpeg"
+  },
+  {
+    "id": 35,
+    "name": "Garlic",
+    "price": "₹80/kg",
+    "amount": "1kg",
+    "vendor": "VeggieMart",
+    "dTime": "13mins",
+    "image": "https://cdn.zeptonow.com/production/tr:w-1280,ar-2000-2000,pr-true,f-auto,q-80/cms/product_variant/5f2e2b2d-2e2e-4e2e-8e2e-2e2e2e2e2e2e.jpeg"
+  },
+  {
+    "id": 36,
+    "name": "Ginger",
+    "price": "₹90/kg",
+    "amount": "1kg",
+    "vendor": "VeggieMart",
+    "dTime": "14mins",
+    "image": "https://cdn.zeptonow.com/production/tr:w-1280,ar-2000-2000,pr-true,f-auto,q-80/cms/product_variant/6f2e2b2d-2e2e-4e2e-8e2e-2e2e2e2e2e2e.jpeg"
+  },
+  {
+    "id": 37,
+    "name": "Lettuce",
+    "price": "₹45/kg",
+    "amount": "1kg",
+    "vendor": "GreenLeaf",
+    "dTime": "10mins",
+    "image": "https://cdn.zeptonow.com/production/tr:w-1280,ar-2000-2000,pr-true,f-auto,q-80/cms/product_variant/7f2e2b2d-2e2e-4e2e-8e2e-2e2e2e2e2e2e.jpeg"
+  },
+  {
+    "id": 38,
+    "name": "Zucchini",
+    "price": "₹60/kg",
+    "amount": "1kg",
+    "vendor": "GreenLeaf",
+    "dTime": "11mins",
+    "image": "https://cdn.zeptonow.com/production/tr:w-1280,ar-2000-2000,pr-true,f-auto,q-80/cms/product_variant/8f2e2b2d-2e2e-4e2e-8e2e-2e2e2e2e2e2e.jpeg"
+  },
+  {
+    "id": 39,
+    "name": "Mushroom",
+    "price": "₹120/kg",
+    "amount": "1kg",
+    "vendor": "GreenLeaf",
+    "dTime": "12mins",
+    "image": "https://cdn.zeptonow.com/production/tr:w-1280,ar-2000-2000,pr-true,f-auto,q-80/cms/product_variant/9f2e2b2d-2e2e-4e2e-8e2e-2e2e2e2e2e2e.jpeg"
+  },
+  {
+    "id": 40,
+    "name": "Celery",
+    "price": "₹50/kg",
+    "amount": "1kg",
+    "vendor": "GreenLeaf",
+    "dTime": "13mins",
+    "image": "https://cdn.zeptonow.com/production/tr:w-1280,ar-2000-2000,pr-true,f-auto,q-80/cms/product_variant/af2e2b2d-2e2e-4e2e-8e2e-2e2e2e2e2e2e.jpeg"
   }
 ]
