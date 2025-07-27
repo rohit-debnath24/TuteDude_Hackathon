@@ -18,6 +18,7 @@ import CategoryPage from './WebPages/Routes/CategoryPage'
 
 import Cart from './Components/Cart'
 import { useState } from 'react'
+import AdminDashboard from './WebPages/AdminDashboard'
 
 
 
@@ -38,6 +39,8 @@ const App = () => {
         <CategoryPage />
 
         <ItemsPage />
+        <AdminDashboard />
+        
         <ProfilePage />
         <ProfileSupplier />
         <Footer />
