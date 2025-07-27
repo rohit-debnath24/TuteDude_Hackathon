@@ -4,7 +4,7 @@ import SubCatItems from '../../Components/SubCatItems'
 
 const CategoryPage = () => {
     return (
-        <div className='grid grid-cols-16 h-auto '>
+        <div className='grid grid-cols-16 pt-40 h-auto '>
             <div className='col-span-1'></div>
             <div className='col-span-2 bg-amber-100 grid  gap-4 overflow-y-auto h-[500px]'>
                 <div className='row-span-3 bg-amber-100'>1</div>
