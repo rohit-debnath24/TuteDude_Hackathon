@@ -8,6 +8,7 @@ import ItemsList from './WebPages/ItemsList'
 import ItemsListPage from './WebPages/ItemsListPage'
 import Footer from './WebPages/Footer'
 import AuthPage from './Authentication/AuthPage'
+import ProfileSupplier from './WebPages/ProfileSupplier'
 
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
    
    <ItemsPage/>
    <ProfilePage/>
+   <ProfileSupplier/>
    <Footer/>
    <AuthPage/>
    
