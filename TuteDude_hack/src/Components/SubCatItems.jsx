@@ -1,13 +1,21 @@
-import React from 'react'
+import React, { useContext, useMemo } from 'react'
+
 
 import Items from '../Components/Items'
 import data from '../DataBase/SubItem.json'
+import { SearchContext } from '../Utilities/SearchContext';
 
 const SubCatItems = () => {
+    const { search } = useContext(SearchContext);
+    // Filter items by search (case-insensitive, matches any part of name)
+    const filteredData = useMemo(() => {
+        if (!search) return data;
+        return data.filter(item => item.name.toLowerCase().includes(search.toLowerCase()));
+    }, [search]);
     return (
         <>
             <div className='grid grid-cols-6 gap-4 mt-5 ml-5 mr-5'>
-                 {data.map(item => (
+                {filteredData.map(item => (
                     <Items
                         key={item.id}
                         Name={item.name}
@@ -18,9 +26,6 @@ const SubCatItems = () => {
                         Image={item.image}
                     />
                 ))}
-
-
-
             </div>
         </>
     )

@@ -99,11 +99,113 @@ const ProfileSupplier = () => {
 
         {/* Main Content */}
         <main className="flex-1 p-12">
+<<<<<<< HEAD
+          <div className="max-w-3xl mx-auto">
+            {showAddresses ? (
+              <div className="mt-12 bg-white border rounded-lg p-6 flex flex-col items-center">
+                <h2 className="text-lg font-semibold mb-2">Your Address & Location</h2>
+                <div className="mb-2 text-gray-700">
+                  <strong>Address:</strong> {profile.address || 'N/A'}
+                </div>
+                <div className="mb-2 text-gray-700">
+                  <strong>Latitude:</strong> {profile.lat || 'N/A'}<br />
+                  <strong>Longitude:</strong> {profile.lng || 'N/A'}
+                </div>
+                {profile.lat && profile.lng && (
+                  <iframe
+                    title="Supplier Location"
+                    width="100%"
+                    height="250"
+                    style={{ border: 0, borderRadius: 8, marginTop: 8, maxWidth: 500 }}
+                    loading="lazy"
+                    allowFullScreen
+                    referrerPolicy="no-referrer-when-downgrade"
+                    src={`https://www.google.com/maps?q=${profile.lat},${profile.lng}&z=16&output=embed`}
+                  ></iframe>
+                )}
+              </div>
+            ) : (
+              <>
+                <h1 className="text-2xl font-bold mb-8">Vendor Dashboard</h1>
+                <div className="bg-white border rounded-lg p-8 flex flex-col items-center justify-center">
+                  <h2 className="text-xl font-semibold mb-2">Welcome to Your Profile</h2>
+                  <p className="text-gray-600 text-center mb-4">Manage your items on the market, addresses, and account details using the menu on the left. Access support and resources to help your business grow.</p>
+                </div>
+                {/* Profile Edit Section */}
+                {showProfileEdit && (
+                  <div className="mt-12 bg-white border rounded-lg p-6 flex flex-col items-center">
+                    <h2 className="text-lg font-semibold mb-2">Edit Profile</h2>
+                    <form
+                      className="flex flex-col gap-4 w-full max-w-md"
+                      onSubmit={e => {
+                        e.preventDefault();
+                        setSaving(true);
+                        localStorage.setItem('supplierProfile', JSON.stringify(edit));
+                        setTimeout(() => {
+                          setSaving(false);
+                          window.location.reload();
+                        }, 500);
+                      }}
+                    >
+                      <label className="text-left font-medium">Name
+                        <input
+                          className="block w-full border rounded px-2 py-1 mt-1"
+                          type="text"
+                          value={edit.name}
+                          onChange={e => setEdit(ed => ({ ...ed, name: e.target.value }))}
+                          required
+                        />
+                      </label>
+                      <label className="text-left font-medium">Phone
+                        <input
+                          className="block w-full border rounded px-2 py-1 mt-1"
+                          type="text"
+                          value={edit.phone}
+                          onChange={e => setEdit(ed => ({ ...ed, phone: e.target.value }))}
+                          required
+                        />
+                      </label>
+                      <label className="text-left font-medium">Address
+                        <input
+                          className="block w-full border rounded px-2 py-1 mt-1"
+                          type="text"
+                          value={edit.address}
+                          onChange={e => setEdit(ed => ({ ...ed, address: e.target.value }))}
+                          required
+                        />
+                      </label>
+                      <div className="w-full">
+                        <div ref={mapRef} style={{ width: '100%', height: 200, borderRadius: 8, marginTop: 8 }}></div>
+                      </div>
+                      <div className="flex gap-4 mt-2">
+                        <button
+                          type="submit"
+                          className="px-4 py-2 bg-purple-600 text-white rounded-lg font-medium hover:bg-purple-700 transition"
+                          disabled={saving}
+                        >
+                          {saving ? 'Saving...' : 'Save'}
+                        </button>
+                        <button
+                          type="button"
+                          className="px-4 py-2 bg-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-400 transition"
+                          onClick={() => setShowProfileEdit(false)}
+                        >
+                          Cancel
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                )}
+                {/* Supplier Resources Section */}
+                <div className="mt-12">
+                  <h2 className="text-lg font-semibold mb-4">Supplier Resources</h2>
+=======
           <div className="max-w-4xl mx-auto">
             {sidebarTab === 'profile' && (
               <div>
                 <h1 className="text-2xl font-bold mb-8">Supplier Profile</h1>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+>>>>>>> cd485acd6e278a37d90d022daee21952ebdd5174
                   <div className="bg-white border rounded-lg p-6 flex flex-col items-center">
                     <div className="w-16 h-16 rounded-full bg-gray-200 flex items-center justify-center text-3xl font-bold text-purple-700 mb-2">
                       {profile.name ? profile.name[0].toUpperCase() : 'S'}

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Nabvar from './Components/Nabvar'
+import { SearchProvider } from './Utilities/SearchContext';
 import Categories from './Components/Categories'
 import HomePage from './WebPages/HomePage'
 import ItemsPage from './WebPages/ItemsPage'
@@ -17,6 +18,7 @@ import VendorRegister from './Authentication/Login'
 
 
 import Cart from './Components/Cart'
+import HomeItemsPage from './WebPages/HomeItemsPage';
 
 
 
@@ -48,6 +50,9 @@ const App = () => {
   const isRegisterRoute = hash === '#/register';
   const isCategoryRoute = hash.startsWith('#/category/');
   const isItemsRoute = hash.startsWith('#/items/');
+  const isItemsListRoute = hash === '#/itemslist';
+  const isProfileRoute = hash === '#/profile';
+  const isSupplierProfileRoute = hash === '#/supplier-profile';
   let categoryName = null;
   let itemName = null;
   if (isCategoryRoute) {
@@ -56,8 +61,9 @@ const App = () => {
   if (isItemsRoute) {
     itemName = decodeURIComponent(hash.replace('#/items/', ''));
   }
+
   return (
-    <>
+    <SearchProvider>
       <div>
         {isRegisterRoute ? (
           isRegistered ? (
@@ -73,28 +79,41 @@ const App = () => {
             <Nabvar onCartClick={() => setCartOpen(true)} />
             <ItemsPage itemName={itemName} />
           </>
+        ) : isItemsListRoute ? (
+          <>
+            <Cart open={cartOpen} onClose={() => setCartOpen(false)} />
+            <Nabvar onCartClick={() => setCartOpen(true)} />
+            <ItemsListPage />
+          </>
         ) : isCategoryRoute ? (
           <>
             <Cart open={cartOpen} onClose={() => setCartOpen(false)} />
             <Nabvar onCartClick={() => setCartOpen(true)} />
             <CategoryPage category={categoryName} />
           </>
+        ) : isProfileRoute ? (
+          <>
+            <Cart open={cartOpen} onClose={() => setCartOpen(false)} />
+            <Nabvar onCartClick={() => setCartOpen(true)} />
+            <ProfilePage />
+          </>
+        ) : isSupplierProfileRoute ? (
+          <>
+            <Cart open={cartOpen} onClose={() => setCartOpen(false)} />
+            <Nabvar onCartClick={() => setCartOpen(true)} />
+            <ProfileSupplier />
+          </>
         ) : (
           <>
             <Cart open={cartOpen} onClose={() => setCartOpen(false)} />
             <Nabvar onCartClick={() => setCartOpen(true)} />
             <HomePage />
-            <ItemsListPage />
-            <CategoryPage />
-            <ProfilePage />
-            <ProfileSupplier />
+            <HomeItemsPage/>
             <Footer />
-            {/* <AuthPage/> */}
           </>
         )}
       </div>
-    </>
-
+    </SearchProvider>
   )
 }
 
