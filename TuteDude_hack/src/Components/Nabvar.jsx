@@ -10,7 +10,7 @@ const Nabvar = ({ onCartClick }) => {
     return (
         <>
             <div className='grid grid-cols-12 gap-4 pt-10 pb-5 fixed w-full z-30 bg-[linear-gradient(1deg,rgba(218,227,230,1)_0%,rgba(143,216,227,1)_73%,rgba(83,237,237,1)_100%)]'>
-                <div id="logo" className='col-span-1 col-start-2 border-2 grid justify-center items-center h-10 cursor-pointer' onClick={() => { window.location.hash = ''; }}>
+                <div id="logo" className='col-span-1 col-start-2  grid justify-center items-center h-10 cursor-pointer' onClick={() => { window.location.hash = ''; }}>
                     <img src="https://b2b989d215c701ad63d7-288404e13f895703cf2798bf6ae95228.ssl.cf1.rackcdn.com/jiDi61521679.png" className='h-full w-full object-cover object-center overflow-hidden' />
                 </div>
                 <div className='col-span-2 col-start-4 grid justify-center items-center'></div>
