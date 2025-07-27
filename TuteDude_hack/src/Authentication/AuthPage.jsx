@@ -90,7 +90,7 @@
 const AuthPage = () => {
   return (
     <div className='w-1/2 h-[60%] z-30 fixed bg-violet-800 grid grid-rows-4 grid-cols-6 p-4  top-1/4 left-1/4  rounded-lg shadow-lg'>
-      <div className='row-span-1 col-span-4 bg-amber-300'><img src="https://static.takeaway.com/images/restaurants/be/QNQ30ORN/logo_465x320.png" className=''></img></div>
+      <div className='row-span-1 col-span-4 bg-amber-300'>LOGO</div>
       <div className='row-span-1 col-span-4 bg-amber-300'>TITLE</div>
       <div className='row-span-1 col-span-4 col-start-1 bg-amber-300 grid grid-rows-2 '>
         <div className='row-span-1 mr-10 ml-10 '><input type="phone" placeholder="Enter Your Phone Number" className='bg-white h-3/4 w-full grid justify-center rounded-3xl '></input></div>
