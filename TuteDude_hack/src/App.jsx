@@ -8,12 +8,12 @@ import ItemsList from './WebPages/ItemsList'
 import ItemsListPage from './WebPages/ItemsListPage'
 import Footer from './WebPages/Footer'
 import CategoryPage from './WebPages/Routes/CategoryPage'
- import AuthPage from './Authentication/AuthPage'
+import AuthPage from './Authentication/AuthPage'
 
 
 
 
- 
+
 import Cart from './Components/Cart'
 import { useState } from 'react'
 
@@ -24,25 +24,26 @@ const App = () => {
   const [cartOpen, setCartOpen] = useState(false);
   return (
     <>
-    <div> 
-          
-      <Cart open={cartOpen} onClose={() => setCartOpen(false)} />
-          <Nabvar onCartClick={() => setCartOpen(true)} />
-   <HomePage/>
-   <ItemsListPage/>
-   <CategoryPage/>
-   
-   
-   <ItemsPage/>
-   <ProfilePage/>
-   <Footer/>
-   {/* <AuthPage/> */}
-   
+      <div>
 
 
-    </div>
+        <Cart open={cartOpen} onClose={() => setCartOpen(false)} />
+        <Nabvar onCartClick={() => setCartOpen(true)} />
+        <HomePage />
+        <ItemsListPage />
+        <CategoryPage />
 
-    
+
+        <ItemsPage />
+        <ProfilePage />
+        <Footer />
+        {/* <AuthPage/> */}
+
+
+
+      </div>
+
+
     </>
 
   )
