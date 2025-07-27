@@ -17,7 +17,7 @@ import VendorRegister from './Authentication/Login'
 
 
 import Cart from './Components/Cart'
-// import { useState } from 'react'
+import { useState } from 'react'
 
 
 
@@ -54,25 +54,35 @@ const App = () => {
   }
   return (
     <>
-    <div> 
-          
-   
-
-
-        <Cart open={cartOpen} onClose={() => setCartOpen(false)} />
-        <Nabvar onCartClick={() => setCartOpen(true)} />
-        <HomePage />
-        <ItemsListPage />
-        <CategoryPage />
-
-        <ItemsPage />
-        <ProfilePage />
-        <ProfileSupplier />
-        <Footer />
-        {/* <AuthPage/> */}
-
-
-
+      <div>
+        {isRegisterRoute ? (
+          isRegistered ? (
+            <>
+              <Cart open={cartOpen} onClose={() => setCartOpen(false)} />
+              <Nabvar onCartClick={() => setCartOpen(true)} />
+              <ProfileSupplier />
+            </>
+          ) : <VendorRegister />
+        ) : isCategoryRoute ? (
+          <>
+            <Cart open={cartOpen} onClose={() => setCartOpen(false)} />
+            <Nabvar onCartClick={() => setCartOpen(true)} />
+            <CategoryPage category={categoryName} />
+          </>
+        ) : (
+          <>
+            <Cart open={cartOpen} onClose={() => setCartOpen(false)} />
+            <Nabvar onCartClick={() => setCartOpen(true)} />
+            <HomePage />
+            <ItemsListPage />
+            <CategoryPage />
+            <ItemsPage />
+            <ProfilePage />
+            <ProfileSupplier />
+            <Footer />
+            {/* <AuthPage/> */}
+          </>
+        )}
       </div>
     </>
 
