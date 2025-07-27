@@ -13,20 +13,20 @@ const ItemDetailView = ({ item }) => {
               key={idx}
               src={img}
               alt={item.name + ' thumbnail ' + idx}
-              className={`w-14 h-14 object-cover rounded-lg border cursor-pointer ${selectedImage === img ? 'border-pink-500' : 'border-gray-200'}`}
+              className={`w-14 h-14 mr-103 object-cover rounded-lg border cursor-pointer ${selectedImage === img ? 'border-pink-500' : 'border-gray-200'}`}
               onClick={() => setSelectedImage(img)}
             />
           ))}
         </div>
         <div className="flex-1 flex items-center justify-center w-full">
-          <img src={selectedImage} alt={item.name} className="w-80 h-80 object-contain rounded-lg" />
+          <img src={selectedImage} alt={item.name} className="w-80 h-80 ml-50 object-contain rounded-lg" />
         </div>
-        <button className="mt-6 w-3/4 py-3 bg-pink-500 text-white font-semibold rounded-lg text-lg hover:bg-pink-600 transition">Add To Cart</button>
+        <button className="mt- w-3/4 py-3 bg-pink-500 text-white font-semibold rounded-lg text-lg hover:bg-pink-600 transition">Add To Cart</button>
         <div className="mt-2 text-lg font-bold text-gray-800">₹{item.price} <span className="line-through text-gray-400 text-base ml-2">₹{item.mrp}</span></div>
       </div>
 
       {/* Right: Details Scrollable Panel */}
-      <div className="w-1/2 pl-8 max-h-[32rem] overflow-y-auto">
+      <div className="w-7/16 pl-8 max-h-[32rem] overflow-y-auto">
         <h2 className="text-2xl font-bold mb-2">{item.name}</h2>
         <div className="flex items-center space-x-4 mb-2">
           <span className="text-gray-600">Net Qty: <span className="font-semibold">{item.netQty}</span></span>
@@ -49,7 +49,7 @@ const ItemDetailView = ({ item }) => {
             <div className="font-medium">{item.goodFor}</div>
           </div>
         </div>
-        <div className="mb-6">
+        <div className="mb-15">
           <h3 className="font-semibold text-lg mb-1">Information</h3>
           <div className="grid grid-cols-2 gap-x-6 gap-y-1 text-gray-700 text-base">
             <div>Disclaimer</div>
